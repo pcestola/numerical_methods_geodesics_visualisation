@@ -1,9 +1,9 @@
 # Numerical methods for visualising geodesics on surfaces
 
-The codes in this repository are designed as support for the study of differential geometry by visualising geodesics using numerical methods. Given a surface, it is recommended to perform the calculations required to set up the geodesics equation manually, as a theoretical exercise, and then enter them into an appropriate subclass of 'Surface' in 'dyanmics.py' so that the equation can be solved numerically and the geodesics visualised as the initial parameters change.
+The code in this repository is designed as support for the study of differential geometry by visualising geodesics using numerical methods. Given a surface, it is recommended to perform the calculations required to set up the geodesics equation manually, as a theoretical exercise, and then enter them into an appropriate subclass of 'Surface' in 'dyanmics.py' so that the equation can be solved numerically and the geodesics visualised as the initial parameters change.
 
 ## 💻Code
-All the codes are written using __python 3.10.12__. Below there is an example of the images that can be produced with the code. The creation of these two images is shown in the file __test.ipynb__.
+All the code is written using __python 3.10.12__. Below there is an example of the images that can be produced with the code. The creation of these two images is shown in the file __test.ipynb__.
 
 <p align="center">
   <img src="/images/Sphere.png" width="400" />
