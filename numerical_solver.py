@@ -46,27 +46,7 @@ def draw_solver_solution(geometry: Surface, solution: np.ndarray, u_domain: Tupl
     surface = geometry.draw(ax, u_space, v_space)
     curve = ax.plot(x, y, z, '-k', linewidth=2, zorder=3)
     # Highlighting start and end points
-    start_point = ax.plot(x[0], y[0], z[0], 'og', zorder=3)
-    end_point = ax.plot(x[-1], y[-1], z[-1], 'or', zorder=3)
+    start_point = ax.plot(x[0], y[0], z[0], 'og', zorder=3, markeredgewidth=1, markeredgecolor='k')
+    end_point = ax.plot(x[-1], y[-1], z[-1], 'or', zorder=3, markeredgewidth=1, markeredgecolor='k')
     ax.axis('equal')
-
-## Dati soluzione numerica
-T = 4*np.pi
-N = 10
-
-## Condizioni iniziali
-initial_condition = np.array([
-    0,
-    1,#0,
-    1,#np.cos(0.96*np.pi/2),
-    0#np.sin(0.96*np.pi/2)
-])
-
-# Geometric Domain
-# geometry = Torus(2.0,1.0)
-geometry = Sphere()
-# Numerical solution
-solver = MultiStepSolver(geometry, RungeKutta(4), AdamsBashforth(4))
-solution = solver.solve(initial_condition, T, N)
-
-draw_solver_solution(geometry, solution, (0,2*np.pi,40), (0,np.pi,20))
+    return fig, ax
