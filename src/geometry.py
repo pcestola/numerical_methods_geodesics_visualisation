@@ -11,6 +11,9 @@ class Surface:
     def parametrization(self, u:np.ndarray, v:np.ndarray) -> np.ndarray:
         raise NotImplementedError("Method 'parametrization' not implemented.")
     
+    def gauss_map(self, u:np.ndarray, v:np.ndarray) -> np.ndarray:
+        raise NotImplementedError("Method 'gauss_map' not implemented.")
+    
     def draw(self, ax, u, v, alpha=0.7, shade=True):
         u, v = np.meshgrid(u,v)
         x, y, z = self.parametrization(u,v)
@@ -34,6 +37,11 @@ class Sphere(Surface):
         y = np.sin(v)*np.sin(u)
         z = np.cos(v)
         return x, y, z
+    
+    def gauss_map(self, u: np.ndarray, v: np.ndarray):
+        # the sphere is a lucky case :)
+        x, y, z = self.parametrization(u,v)
+        return -x, -y, -z
     
 class Torus(Surface):
     def __init__(self, R: float, r: float) -> None:

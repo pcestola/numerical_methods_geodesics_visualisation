@@ -2,8 +2,8 @@ import numpy as np
 from matplotlib import cm
 from typing import Callable, Tuple
 import matplotlib.pyplot as plt
-from src.dynamics import Sphere, Torus, Surface
-from src.ode_methods import OdeMethod, ForwardEuler, RungeKutta, AdamsBashforth
+from geometry import Sphere, Torus, Surface
+from ode_methods import OdeMethod, ForwardEuler, RungeKutta, AdamsBashforth
 from abc import ABC, abstractmethod
 
 class Solver(ABC):
