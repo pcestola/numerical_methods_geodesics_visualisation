@@ -14,3 +14,10 @@ All the code is written using __python 3.10.12__. Below there is an example of t
   <img src="/images/Sphere.png" width="400" />
   <img src="/images/Torus.png" width="400" /> 
 </p>
+
+Same images produced with matlab
+
+<p align="center">
+  <img src="/images/Sphere_matlab.png" width="400" />
+  <img src="/images/Torus_matlab.png" width="450" /> 
+</p>
