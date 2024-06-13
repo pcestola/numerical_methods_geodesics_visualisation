@@ -19,5 +19,5 @@ Same images produced with matlab
 
 <p align="center">
   <img src="/images/Sphere_matlab.png" width="400" />
-  <img src="/images/Torus_matlab.png" width="450" /> 
+  <img src="/images/Torus_matlab.png" width="430" /> 
 </p>
