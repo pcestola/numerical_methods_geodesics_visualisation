@@ -15,7 +15,7 @@ This repository serves as a tool to support the study of **differential geometry
 
 ### Key Workflow
 1. **Theoretical Preparation**:  
-   Perform the required calculations to derive the geodesic equation for a given surface by hand. This exercise strengthens understanding of the underlying mathematics.
+   Perform the required calculations to derive the geodesic equation for a given surface by hand.
 2. **Numerical Implementation**:  
    Input the geodesic equations into a subclass of `Surface` in `dynamics.py` to enable numerical solving and visualization.
 
